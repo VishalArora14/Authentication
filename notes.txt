@@ -1,0 +1,19 @@
+Many layers of authentication and security
+
+1)Username and password
+    but anyone working inside the company can see the plain text passwd in the database
+    or if someone hack the database .passwords cant be stored in form of plain text
+
+2)Encryption of passwd in database
+    Scramble the passwd.
+    By using an encryption key.
+
+    but if someone gets the encryption string passwds can be decrypted using the same fn and encryption string
+
+3) Environment Variables
+
+    A file storing encryption keys and imp files
+    .env (npm i dotenv)
+    require this as early as possible
+
+    add .env file to git ignore
